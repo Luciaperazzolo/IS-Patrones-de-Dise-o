@@ -14,7 +14,7 @@ public class mainChain {
         nivel2.setSiguiente(nivel3);
 
         //Creamos una solicitud de Nivel 2, 
-        Solicitud solicitud = new Solicitud(2, "El sistema no permite realizar una operación.");
+        Solicitud solicitud = new Solicitud(2, "El sistema no me permite iniciar sesión");
         //Se inicia la cadena en el nivel 1.
         nivel1.manejar(solicitud);
     }
