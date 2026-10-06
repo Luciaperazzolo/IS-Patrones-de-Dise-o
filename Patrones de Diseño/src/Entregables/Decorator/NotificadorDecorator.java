@@ -6,16 +6,19 @@ package Entregables.Decorator;
  * concretos agregan su propio canal encima.
  */
 
-public abstract class NotificadorDecorator implements Notificador {
+public class NotificadorDecorator implements Notificador { //clase base para los Decorators concretos
 
-    protected Notificador notificador; // el notificador envuelto
+    protected Notificador notificador; //Esto hace que el decorator tenga un Notificador adentro. Es el objeto envuelto.
 
-    public NotificadorDecorator(Notificador notificador) {
+    public NotificadorDecorator(Notificador notificador) { //Recibe el objeto a envolver y lo guarda.
         this.notificador = notificador;
     }
 
     @Override
-    public void enviar(String mensaje) {
+    public void enviar(String mensaje) { //le pasa el mensaje al objeto que esta envolviendo
         notificador.enviar(mensaje);
     }
+
+    //El Decorator no reemplaza necesariamente el comportamiento anterior.
+    //Lo conserva y permite agregar algo antes o después. 
 }

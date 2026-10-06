@@ -5,6 +5,7 @@ package Entregables.Observer;
 public class Main {
 
     public static void main(String[] args) {
+       
         Noticiero noticiero = new Noticiero();
 
         Celular celular = new Celular();

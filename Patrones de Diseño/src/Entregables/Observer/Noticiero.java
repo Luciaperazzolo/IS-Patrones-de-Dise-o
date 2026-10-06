@@ -6,7 +6,7 @@ import java.util.ArrayList;
 public class Noticiero implements Sujeto {
 
     private ArrayList<Observador> lista = new ArrayList<>();
-    private String noticia;
+    private String noticia; //Esta variable representa el estado del Subject. Cada vez que cambia, se notifica a los observadores.
 
     public void agregar(Observador o) {
         lista.add(o);

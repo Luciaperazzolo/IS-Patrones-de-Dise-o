@@ -13,7 +13,7 @@ public class NotificadorSlack extends NotificadorDecorator {
 
     @Override
     public void enviar(String mensaje) {
-        super.enviar(mensaje); // primero lo anterior
-        System.out.println("[SLACK] " + mensaje);
+        super.enviar(mensaje); // Ejecuta primero el comportamiento del Decorator padre, primero se ejecuta el objeto que está envuelto.
+        System.out.println("[SLACK] " + mensaje); //Esto agrega el nuevo comportamiento: enviar también por Slack.
     }
 }
